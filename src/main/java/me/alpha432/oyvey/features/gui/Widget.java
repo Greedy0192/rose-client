@@ -53,7 +53,7 @@ public class Widget
         int color = ClickGuiModule.getInstance().topColor.getValue().getRGB();
         context.fill(this.x, this.y - 1, this.x + this.width, this.y + this.height - 6, ClickGuiModule.getInstance().rainbow.getValue() ? ColorUtil.rainbow(ClickGuiModule.getInstance().rainbowHue.getValue()).getRGB() : color);
         if (this.open) {
-            RenderUtil.rect(context, this.x, (float) this.y + 12.5f, this.x + this.width, (float) (this.y + this.height) + totalItemHeight, 0x77000000);
+            RenderUtil.rect(context, this.x, (float) this.y + 12.5f, this.x + this.width, (float) (this.y + this.height) + totalItemHeight, 0xAA413631;
         }
         drawString(this.getName(), (float) this.x + 3.0f, (float) this.y - 4.0f - (float) OyVeyGui.getClickGui().getTextOffset(), -1);
         ScissorUtil.enable(context, x, 0, x + width, mc.getWindow().getGuiScaledHeight());
