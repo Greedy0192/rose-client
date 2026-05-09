@@ -17,8 +17,8 @@ public class ClickGuiModule extends Module {
     private static ClickGuiModule INSTANCE;
 
     public final Setting<String> prefix = str("Prefix", ".");
-    public final Setting<Color> color = color("Color", 0, 0, 255, 180);
-    public final Setting<Color> topColor = color("TopColor", 0, 0, 150, 240);
+    public final Setting<Color> color = color("Color", 65, 54, 49, 220);
+    public final Setting<Color> topColor = color("TopColor", 92, 76, 69, 255);
     public final Setting<Boolean> rainbow = bool("Rainbow", false);
     public final Setting<Integer> rainbowHue = num("Delay", 240, 0, 600);
     public final Setting<Float> rainbowBrightness = num("Brightness", 150.0f, 1.0f, 255.0f);
