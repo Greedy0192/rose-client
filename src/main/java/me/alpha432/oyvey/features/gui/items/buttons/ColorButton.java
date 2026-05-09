@@ -36,7 +36,7 @@ public class ColorButton extends Button {
         Color realColor = Color.getHSBColor(hsb[0], 1, 1);
 
         RenderUtil.rect(context, this.x, this.y, this.x + (float) this.width + 7.4f, this.y + (float) this.height - 0.5f,
-                !this.isHovering(mouseX, mouseY) ? 0x11555555 : -2007673515);
+                !this.isHovering(mouseX, mouseY) ? 0x2A413631 : 0x66413631);
 
         RenderUtil.rect(context, this.x + (float) this.width - 4f, this.y + 3f,
                 this.x + (float) this.width + 5.0f, this.y + (float) this.height - 2.5f,
@@ -118,12 +118,12 @@ public class ColorButton extends Button {
 
             int buttonWidth = availableWidth / 2;
             RenderUtil.rect(context, pickerX, this.y + yOffset, pickerX + buttonWidth, this.y + yOffset + 14,
-                    hoveringCopy ? OyVey.colorManager.getColorWithAlpha(y, ClickGuiModule.getInstance().topColor.getValue().getAlpha()) : 0x11555555);
+                    hoveringCopy ? OyVey.colorManager.getColorWithAlpha(y, ClickGuiModule.getInstance().topColor.getValue().getAlpha()) : 0x2A413631);
             drawString("Copy", pickerX + buttonWidth / 2.0 - mc.font.width("Copy") / 2.0, this.y + yOffset + 3, -1);
             hoveringCopy = isHoveringArea(mouseX, mouseY, pickerX, this.y + yOffset, pickerX + buttonWidth, this.y + yOffset + 14);
 
             RenderUtil.rect(context, pickerX + buttonWidth + 1, this.y + yOffset, pickerX + buttonWidth * 2 + 1, this.y + yOffset + 14,
-                    hoveringPaste ? OyVey.colorManager.getColorWithAlpha(y, ClickGuiModule.getInstance().topColor.getValue().getAlpha()) : 0x11555555);
+                    hoveringPaste ? OyVey.colorManager.getColorWithAlpha(y, ClickGuiModule.getInstance().topColor.getValue().getAlpha()) : 0x2A413631);
             drawString("Paste", pickerX + buttonWidth + buttonWidth / 2.0 - mc.font.width("Paste") / 2.0 + 1, this.y + yOffset + 3, -1);
             hoveringPaste = isHoveringArea(mouseX, mouseY, pickerX + buttonWidth + 1, this.y + yOffset, pickerX + buttonWidth * 2 + 1, this.y + yOffset + 14);
         }
